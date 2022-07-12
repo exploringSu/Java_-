@@ -9,7 +9,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @description :阻塞队列的实现  put  take poll
+ * @description :阻塞队列的实现  put  take poll()
  * @date: 2022/7/12 9:19
  */
 public class demo09<T> {
