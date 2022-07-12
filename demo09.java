@@ -36,6 +36,7 @@ public class demo09<T> {
             T firsttask = blockqueue.removeFirst();
             product_wait.signal();
             return firsttask;
+            //System.out.println("jjj");
 
         }
         finally {
