@@ -1,0 +1,22 @@
+//给定层序遍历的数组，建立一棵二叉树
+//int[] nums={1,2,3,4,5,6,7};
+
+
+  //建树的代码
+  public static TreeNode bulid(int[] nums,int i){
+        if(i>=nums.length)return  null;
+        TreeNode root=new TreeNode(nums[i]);
+        root.left=bulid(nums,i*2+1);
+        root.right=bulid(nums,i*2+2);
+        return root;
+   }
+   
+   
+   //主函数内使用
+   public static void main(String[] args) {
+        int[] nums={1,2,3,4,5,6,7};
+        TreeNode root = bulid(nums, 0);
+        //此时这个树就已经建好了，root为头节点
+    }
+    
+    
